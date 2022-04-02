@@ -10,5 +10,3 @@ stata_3col_table1.do creates a 'classic table 1' but with 3 groups not 2. This m
 stata_2col_table1.do does the same for a 2 column table. This is incomplete as I worked on the harder version first. 
 
 stata_table_reg1.do creates a regression table - not much modified from Huber's original
-
-stata_table_reg2.do will create regression coefficient tables for a single exposure with multiple models. 
