@@ -19,7 +19,7 @@ version 17
 ********************************
 // modify the next line to use your dataset rather than the example dataset. 
 // This is only included for the purpose of the example.
-import delimited "https://raw.githubusercontent.com/Lifelong-Health-Ageing/Stata-Tables/4fe4feba092e6b63db6ea206cf01430defeadf3b/data/Bland_pefr_wide_v1.csv?token=GHSAT0AAAAAABWNIXGJMQC7VODF4JDPMOICYWINVIQ", clear
+import delimited "https://raw.githubusercontent.com/Lifelong-Health-Ageing/Stata-Tables/4fe4feba092e6b63db6ea206cf01430defeadf3b/data/Bland_pefr.csv?token=GHSAT0AAAAAABWNIXGJMQC7VODF4JDPMOICYWINVIQ", clear
 
 ********************************
 // set up locals
