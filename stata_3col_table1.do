@@ -116,4 +116,5 @@ putdocx text ("Table 1. "), bold  // add table legend here if you want
 putdocx collect
 putdocx paragraph
 putdocx text ("Table footnotes to be added")
-putdocx save "C:\data\table1.docx", replace  // send to docx currently in C:\data assuming this exists in most stata installations
+// save table 
+// putdocx save "table1.docx", replace 
