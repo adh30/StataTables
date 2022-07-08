@@ -17,6 +17,8 @@ Some of this code is based on code written by Chuck Huber https://www.timberlake
 
 The code uses a freely available set of the [Second National Health and Nutrition Examination Survey](https://www.stata-press.com/data/r17/nhanes2l) as an example. It can be modified to use any dataset. 
 
+Additional public data for testing purposes are available in the /data subdirectory.
+
 ### Requirements
 
 Software or packages that needs to be installed and and how to install them.
