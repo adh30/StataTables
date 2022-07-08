@@ -2,7 +2,7 @@
 #### Project Status: In progress
 
 ## Project Description
-Code to create customizable tables in Stata using the collect or tables command. This repo started out as an exercise in using the collect and tables commands in Stata 17 but is shared in case it is useful to anyone wanting to make tables in word.
+Code to create customizable tables in Stata using the collect and/or tables command. This repo started out as an exercise in using the collect and tables commands in Stata 17 but is shared in case it is useful to anyone wanting to make tables in word.
 
 ## How does it work?
 
