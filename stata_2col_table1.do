@@ -45,16 +45,13 @@ foreach x in `skcontvar' {
 }
 // chi2 
 foreach x in `catvar' {
-	collect r(p),  tag(var[`x']): tab `x' `stratum', chi2
+	quietly: collect r(p),  tag(var[1.`x']): tab `x' `stratum', chi2
 }
-
 // 1-D table 1
 // recode the frequency to the same columns as mean sd p
 collect recode result fvfrequency=mean fvpercent=sd median=mean iqr=sd
-//collect recode p1=result[p]
 // rename labels for mean and sd
 collect label levels result mean "Mean/Median/N" sd "(SD)/[IQR]/%", modify
-//collect layout (var) (sex#result)
 // drop right border
 collect style cell, border( right, pattern(nil) )
 // put SD in parenthesis in 
@@ -64,13 +61,11 @@ collect	style	row	stack,	nodelimiter	nospacer	indent	length(.)	///
 wrapon(word)	noabbreviate	wrap(.)	truncate(tail)
 // group mean and SD together
 // insert the p value into Stack 
-collect layout (var) (sex#result result[p])
-** need to relocate p values for categorical variables
-// change format of continuous 
+collect layout (var) (`stratum'#result result[p] colname[2.`stratum']#result[_r_p]) (), name(Table)
+// change format of data
 collect style cell result[mean]#var[`catvar'], nformat(%9.0f)
 collect style cell result[sd]#var[`catvar'], sformat("%s%%") 
 collect style cell result[sd]#var[`skcontvar'], sformat("[%s]")
 collect style cell result[p], nformat(%9.3f)
-collect preview
-// send to docx
+// send to docx - 
 //collect export table1.docx, replace
