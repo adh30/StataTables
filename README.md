@@ -5,9 +5,9 @@
 Code to create customizable tables in Stata using the collect and/or tables command. This repo started out as an exercise in using the collect and tables commands in Stata 17 but I have shared it in case it is useful to anyone wanting to make tables in word using a do file.
 
 ## How does it work?
-* stata_1col_table1 makes a simple 1 column 'Table 1' of characteristics
+* stata_1col_table1 makes a simple 1 column 'Classic Table 1' of characteristics
 * stata_2col_table1.do does the same for a 2 column table. This has not been extensively testsed as I worked on the (more difficult) 3 column version first. 
-* stata_3col_table1.do creates a 'classic table 1' but with 3 groups not 2. This makes the coding a bit more complex as you can't use t-tests in table to calculate the p values so it uses one-way ANOVA as an omnibus test for parametric data, Kruskal Wallis for skewed data and Chi2 for categorical data. I've also solved how to include p values from a Kruskal Wallis ANOVA but it feels clunky and there may be a better way. I've also added some post-hoc tests (unadjusted for multiple comparisons). 
+* stata_3col_table1.do creates a 'Classic Table 1' but with 3 groups not 2. This makes the coding a bit more complex as you can't use t-tests in table to calculate the p values so it uses one-way ANOVA as an omnibus test for parametric data, Kruskal Wallis for skewed data and Chi2 for categorical data. I've also solved how to include p values from a Kruskal Wallis ANOVA but it feels clunky and there may be a better way. I've also added some post-hoc tests (unadjusted for multiple comparisons). 
 * stata_table_reg1.do creates a regression table
 * stata_ba_table.do creates a table of results for a Bland Altman analysis using the concord.ado package by Thomas J. Steichen, RJRT & Nicholas J. Cox, Durham University (http://www.stata-journal.com/software/sj10-4)
 
