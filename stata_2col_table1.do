@@ -1,3 +1,18 @@
+// stata_2col_table1.do
+********************************
+// [stata_2col_table1.do]
+// Author: ADH	
+// Date: 08/07/22
+// Description: 'Classic Table 1 for two strata'
+********************************
+// standard settings
+version 17
+//clear all
+//macro drop _all
+//set linesize 80
+//set more off
+//pause on
+********************************
 use https://www.stata-press.com/data/r17/nhanes2l
 // useful commands
 collect dims
