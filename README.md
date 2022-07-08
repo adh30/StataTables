@@ -26,14 +26,16 @@ Software or packages that needs to be installed and and how to install them.
 
 ### Getting started
 
-Describe the way in which the code can be used. 
+Just modify the do file to use a dataset of your choice and add the relevant variables to the locals for continuous and categorical variables. 
+At present I havent included the code for skewed variables except in stata_3col_table1.do but since this is the most complex example it should be quite straighforward to implement.  
 
 ## Useful references
-
+https://www.stata.com/manuals/tables.pdf
+https://www.stata.com/new-in-stata/tables/
 
 ## Authors
 
-* Alun Hughes
+* Alun Hughes (Twitter: @alundhughes30; Github: https://github.com/adh30)
 
 ## License
 
@@ -41,6 +43,4 @@ This project is licensed under the GNU General Public License v3.0 (https://gith
 
 ## Acknowledgments
 
-* Chuck Huber
-* Inspiration
-* etc
+* Chuck Huber Customizable tables in Stata 17, (parts 1 to 7) on http://blog.stata.com/
