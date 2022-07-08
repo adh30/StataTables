@@ -3,7 +3,7 @@
 // [stata_1coltable1.do]
 // Author: ADH	
 // Date: 08/11/21
-// Description: 'Table 1'
+// Description: 'Classic Table 1'
 ********************************
 // standard settings
 version 17
