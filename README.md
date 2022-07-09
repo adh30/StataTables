@@ -2,7 +2,7 @@
 #### Project Status: In progress
 
 ## Project Description
-Code to create customizable tables in Stata using the collect and/or tables command and write them into a word document (docx). This repo started out as an exercise in using the collect and tables commands in Stata 17 but I have shared it in case it is useful to anyone wanting to make tables in word using a do file.
+Stata code to create customizable tables using the collect and/or tables command and write them into a word document (docx). This repo started out as an exercise in using the collect and tables commands in Stata 17 but I have shared it in case it is useful to anyone wanting to make tables in word using a do file.
 
 ## How does it work?
 * stata_1col_table1 makes a simple 1-column 'Classic Table 1' of characteristics
