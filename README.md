@@ -5,8 +5,8 @@
 Code to create customizable tables in Stata using the collect and/or tables command and write them into a word document (docx). This repo started out as an exercise in using the collect and tables commands in Stata 17 but I have shared it in case it is useful to anyone wanting to make tables in word using a do file.
 
 ## How does it work?
-* stata_1col_table1 makes a simple 1 column 'Classic Table 1' of characteristics
-* stata_2col_table1.do does the same for a 2 column table. This has not been extensively testsed as I worked on the (more difficult) 3 column version first. I havent implemented non-parametric statistics for this file but this could be done fairly simply based on stata_3col_table1.do (see below)
+* stata_1col_table1 makes a simple 1-column 'Classic Table 1' of characteristics
+* stata_2col_table1.do does the same for a 2-column table. This has not been extensively testsed as I worked on the (more difficult) 3 column version first. I havent implemented non-parametric statistics for this file but this could be done fairly simply based on stata_3col_table1.do (see below)
 * stata_3col_table1.do creates a 'Classic Table 1' but with 3 groups not 2. This makes the coding a bit more complex as you can't use t-tests in table to calculate the p values. Instead it uses one-way ANOVA as an omnibus test for parametric data, Kruskal Wallis for skewed data and Chi2 for categorical data. I've solved how to include p values from a Kruskal Wallis ANOVA but it feels clunky and there may be a better way. I've also added some post-hoc tests (unadjusted for multiple comparisons). **This do file requires that conovertest.ado by Alexis Dinno (https://alexisdinno.com/stata) is installed. This performs a Conover-Iman test of multiple comparisons using rank sums**
 * stata_table_reg1.do creates a regression table. This is quite primative at present.
 * stata_ba_table.do creates a table of results for a Bland Altman analysis. **This do file requires the concord.ado package by Thomas J. Steichen, RJRT & Nicholas J. Cox, Durham University (http://www.stata-journal.com/software/sj10-4)**
