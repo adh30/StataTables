@@ -66,6 +66,6 @@ collect layout (var) (`stratum'#result result[p] colname[2.`stratum']#result[_r_
 collect style cell result[mean]#var[`catvar'], nformat(%9.0f)
 collect style cell result[sd]#var[`catvar'], sformat("%s%%") 
 collect style cell result[sd]#var[`skcontvar'], sformat("[%s]")
-collect style cell result[p], nformat(%9.3f)
+collect style cell result[p], minimum(0.001) maximum(0.999) nformat(%9.3f))
 // send to docx - 
 //collect export table1.docx, replace
