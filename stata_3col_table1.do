@@ -89,12 +89,12 @@ collect style cell, border( right, pattern(nil) )
 // Stack categories
 collect	style row	stack,	nodelimiter	nospacer	indent	length(.)	///
 wrapon(word)	noabbreviate	wrap(.)	truncate(tail)
-// change format of mean and dispersion measures 
+// change format of mean and dispersion measures and 
 collect style cell result[mean]#var[`catvar'], nformat(%9.0f)
 collect style cell result[mean]#var[`catvar'], sformat("%s%%") 
 collect style cell result[sd]#var[`ncontvar'], sformat("(%s)")
 collect style cell result[sd]#var[`skcontvar'], sformat("[%s]")
-collect style cell result[p], nformat(%9.3f)
+collect style cell result[p], minimum(0.001) maximum(0.999) nformat(%9.3f)
 
 // Table consists of two columns - race by result and p values
 //collect layout (var) (race#result result[p] colname[2.race]#result[_r_p] colname[3.race]#result[_r_p]) (), name(Table)
