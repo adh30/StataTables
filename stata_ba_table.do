@@ -17,9 +17,10 @@ version 17
 //set more off
 //pause on
 ********************************
+cd c:\data // ensure you are in approporiate  data folder (most installations have this and it should work for the example but this may need to be edited)
 // modify the next line to use your dataset rather than the example dataset. 
 // This is only included for the purpose of the example.
-import delimited "https://raw.githubusercontent.com/Lifelong-Health-Ageing/Stata-Tables/4fe4feba092e6b63db6ea206cf01430defeadf3b/data/Bland_pefr.csv?token=GHSAT0AAAAAABWNIXGJMQC7VODF4JDPMOICYWINVIQ", clear
+import delimited "https://raw.githubusercontent.com/Lifelong-Health-Ageing/StataTables/main/data/Bland_pefr.csv?token=GHSAT0AAAAAAB2MHTX2ZY6WRF53BQRHCXC2Y4IWA3A", clear
 
 ********************************
 // set up locals
