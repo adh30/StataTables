@@ -1,4 +1,4 @@
-# Stata-Tables
+# StataTables
 #### Project Status: In progress
 
 ## Project Description
