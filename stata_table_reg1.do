@@ -1,4 +1,4 @@
-use https://www.stata-press.com/data/r17/nhanes2l
+use https://www.stata-press.com/data/r17/nhanes2l, clear
 
 // clear any previous collect
 collect clear
