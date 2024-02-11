@@ -6,8 +6,6 @@
 // Description: 'Table of results for Bland Altman analysis using concord' 
 // using multiple variables for comparison
 // version 1.0
-// Requirements
-** user written code concord is required (Nicholas J. Cox & Thomas Steichen, 2000. "CONCORD: Stata module for concordance correlation," Statistical Software Components S404501, Boston College Department of Economics, revised 09 Aug 2007) http://www.stata-journal.com/software/sj10-4
 ********************************
 // standard settings
 version 17
@@ -17,11 +15,15 @@ version 17
 //set more off
 //pause on
 ********************************
+// Requirements
+/* user written code concord is required (Nicholas J. Cox & Thomas Steichen, 2000. "CONCORD: Stata module for concordance correlation," 
+Statistical Software Components S404501, Boston College Department of Economics, revised 09 Aug 2007) http://www.stata-journal.com/software/sj10-4 */
+net install st0015_6.pkg
+********************************
 cd c:\data // ensure you are in appropriate  data folder (most installations have this and it should work for the example but this may need to be edited)
 // modify the next line to use your dataset rather than the example dataset. 
 // This is only included for the purpose of the example.
 import delimited "https://raw.githubusercontent.com/Lifelong-Health-Ageing/StataTables/main/data/Bland_pefr.csv?token=GHSAT0AAAAAAB2MHTX2ZY6WRF53BQRHCXC2Y4IWA3A", clear
-
 ********************************
 // set up locals
 local varlist w_pefr mw_pefr // we omit the number of the observation so we can include that in the loop
