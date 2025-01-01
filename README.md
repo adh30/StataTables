@@ -32,7 +32,6 @@ https://www.stata.com/new-in-stata/tables/
 * Alun Hughes (Twitter: @alundhughes30; Github: https://github.com/adh30)
 
 ## License
-This project is licensed under the GNU General Public License v3.0 (https://github.com/adh30/BPplus-Reservoir/blob/Version-1-beta-4/LICENSE)).
 
 ## Acknowledgments
 * Some of this code is based on code written by Chuck Huber https://www.timberlake.co.uk/news/customizable-tables-in-stata-17-with-chuck-huber/ and Chuck Huber Customizable tables in Stata 17, (parts 1 to 7) on http://blog.stata.com/
